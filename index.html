@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logeshwaran V — Cyber Security Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">LOGESH<span>WARAN</span><i class="cursor-blip">_</i></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" data-cmd="home">whoami</a>
+      <a href="#about" data-cmd="about">about.md</a>
+      <a href="#skills" data-cmd="skills">skills --list</a>
+      <a href="#projects" data-cmd="projects">./projects</a>
+      <a href="#education" data-cmd="education">education.log</a>
+      <a href="#certificates" data-cmd="certs">certs --verify</a>
+      <a href="#contact" data-cmd="contact">contact --secure</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HOME -->
+<section id="home" class="section hero">
+  <div class="terminal-window hero-terminal">
+    <div class="terminal-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="terminal-title">logeshwaran@securebox: ~</span>
+    </div>
+    <div class="terminal-body">
+      <p class="line prompt">$ whoami</p>
+      <h1 class="hero-name">Logeshwaran V</h1>
+      <p class="line prompt">$ status --role</p>
+      <p class="hero-role">
+        <span id="typedText"></span><span class="type-cursor">|</span>
+      </p>
+      <p class="line prompt">$ connect --profile</p>
+      <div class="hero-actions">
+        <a href="resume.pdf" class="btn btn-primary" id="resumeBtn" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          Download Resume
+        </a>
+        <div class="social-icons">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="icon-glow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.29 9.28 7.86 10.78.57.1.78-.25.78-.55v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55A11.53 11.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="icon-glow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span></span>scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <p class="section-label">about.md</p>
+  <h2 class="section-title">Securing systems, one exploit at a time</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm Logeshwaran V, a Cyber Security Engineering student focused on network defense, ethical hacking, and building systems that don't break under pressure — or under attack.</p>
+      <p>I spend my time studying attacker behaviour so I can design better defences: reverse-engineering vulnerabilities, hardening infrastructure, and turning theory from the classroom into hands-on lab work.</p>
+      <p>When I'm not in a CTF or a lab environment, I'm learning the tools that keep real-world systems safe.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card">
+        <span class="stat-num" data-count="15">0</span>
+        <span class="stat-label">Labs &amp; CTFs</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-count="8">0</span>
+        <span class="stat-label">Projects Built</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-count="6">0</span>
+        <span class="stat-label">Certifications</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <p class="section-label">skills --list</p>
+  <h2 class="section-title">Toolset &amp; Capabilities</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Network Security</h3>
+      <div class="bar"><div class="bar-fill" data-level="85"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>Ethical Hacking</h3>
+      <div class="bar"><div class="bar-fill" data-level="80"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>Linux / Kali</h3>
+      <div class="bar"><div class="bar-fill" data-level="88"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>Python</h3>
+      <div class="bar"><div class="bar-fill" data-level="82"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>Web App Pentesting</h3>
+      <div class="bar"><div class="bar-fill" data-level="75"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>Cryptography</h3>
+      <div class="bar"><div class="bar-fill" data-level="70"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>SIEM Tools</h3>
+      <div class="bar"><div class="bar-fill" data-level="65"></div></div>
+    </div>
+    <div class="skill-card">
+      <h3>Cloud Security</h3>
+      <div class="bar"><div class="bar-fill" data-level="60"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <p class="section-label">./projects</p>
+  <h2 class="section-title">Selected Work</h2>
+  <div class="projects-grid">
+    <article class="project-card">
+      <div class="project-glow"></div>
+      <h3>Network Intrusion Detector</h3>
+      <p>A real-time packet sniffer and anomaly detector that flags suspicious traffic patterns using signature and heuristic rules.</p>
+      <div class="tags"><span>Python</span><span>Scapy</span><span>Networking</span></div>
+    </article>
+    <article class="project-card">
+      <div class="project-glow"></div>
+      <h3>Vulnerability Scanner</h3>
+      <p>Automated scanner that crawls target hosts, fingerprints services, and cross-references known CVEs to generate risk reports.</p>
+      <div class="tags"><span>Python</span><span>Nmap API</span><span>CVE DB</span></div>
+    </article>
+    <article class="project-card">
+      <div class="project-glow"></div>
+      <h3>Secure File Vault</h3>
+      <p>An AES-256 encrypted local vault with password-based key derivation for storing sensitive files safely.</p>
+      <div class="tags"><span>Cryptography</span><span>Python</span><span>PyQt</span></div>
+    </article>
+    <article class="project-card">
+      <div class="project-glow"></div>
+      <h3>Phishing URL Classifier</h3>
+      <p>A machine learning model trained on URL and domain features to detect phishing links with high precision.</p>
+      <div class="tags"><span>ML</span><span>scikit-learn</span><span>Flask</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <p class="section-label">education.log</p>
+  <h2 class="section-title">Academic Timeline</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">2023 — Present</span>
+        <h3>B.E. Cyber Security Engineering</h3>
+        <p>Core coursework in network security, cryptography, digital forensics, and ethical hacking.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">2021 — 2023</span>
+        <h3>Higher Secondary Education</h3>
+        <p>Computer Science stream, with a focus on mathematics and programming fundamentals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
+  <p class="section-label">certs --verify</p>
+  <h2 class="section-title">Certifications</h2>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <div class="cert-icon">✓</div>
+      <h3>Google Cybersecurity Certificate</h3>
+      <span class="verified">verified</span>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">✓</div>
+      <h3>CompTIA Security+ (In Progress)</h3>
+      <span class="verified">pending</span>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">✓</div>
+      <h3>Cisco Introduction to Cybersecurity</h3>
+      <span class="verified">verified</span>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">✓</div>
+      <h3>TryHackMe — Pre Security Path</h3>
+      <span class="verified">verified</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <p class="section-label">contact --secure</p>
+  <h2 class="section-title">Establish a Connection</h2>
+  <div class="contact-wrap">
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <label for="name">name</label>
+        <input type="text" id="name" placeholder="your_name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">email</label>
+        <input type="email" id="email" placeholder="you@domain.com" required>
+      </div>
+      <div class="form-row">
+        <label for="message">message</label>
+        <textarea id="message" rows="4" placeholder="type your message..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Transmission</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+    <div class="contact-links">
+      <a href="mailto:logeshwaran@example.com" class="contact-link">
+        <span>Email</span>
+        <strong>logeshwaran@example.com</strong>
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link">
+        <span>GitHub</span>
+        <strong>github.com/logeshwaranv</strong>
+      </a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-link">
+        <span>LinkedIn</span>
+        <strong>linkedin.com/in/logeshwaranv</strong>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2026 Logeshwaran V. Built with HTML, CSS &amp; JS. <span class="footer-blink">●</span> system secure</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
